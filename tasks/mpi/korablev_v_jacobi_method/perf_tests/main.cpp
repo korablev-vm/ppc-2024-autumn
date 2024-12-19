@@ -37,7 +37,11 @@ std::pair<std::vector<double>, std::vector<double>> generate_diagonally_dominant
   return {A, b};
 }
 
+<<<<<<< Updated upstream
 TEST(korablev_v_jacobi_method, test_pipeline_run) {
+=======
+TEST(korablev_v_jacobi_method_mpi, test_pipeline_run) {
+>>>>>>> Stashed changes
   boost::mpi::communicator world;
 
   const size_t matrix_size = 512;
@@ -79,7 +83,11 @@ TEST(korablev_v_jacobi_method, test_pipeline_run) {
   }
 }
 
+<<<<<<< Updated upstream
 TEST(korablev_v_jacobi_method, test_task_run) {
+=======
+TEST(korablev_v_jacobi_method_mpi, test_task_run) {
+>>>>>>> Stashed changes
   boost::mpi::communicator world;
 
   const size_t matrix_size = 512;

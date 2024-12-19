@@ -35,7 +35,11 @@ std::pair<std::vector<double>, std::vector<double>> generate_diagonally_dominant
   return {A, b};
 }
 
+<<<<<<< Updated upstream
 TEST(korablev_v_jacobi_method, test_pipeline_run) {
+=======
+TEST(korablev_v_jacobi_method_seq, test_pipeline_run) {
+>>>>>>> Stashed changes
   const size_t matrix_size = 512;
   auto [A_flat, b] = generate_diagonally_dominant_matrix(matrix_size);
 
@@ -76,7 +80,11 @@ TEST(korablev_v_jacobi_method, test_pipeline_run) {
   ASSERT_EQ(matrix_size, out.size());
 }
 
+<<<<<<< Updated upstream
 TEST(korablev_v_jacobi_method, test_task_run) {
+=======
+TEST(korablev_v_jacobi_method_seq, test_task_run) {
+>>>>>>> Stashed changes
   const size_t matrix_size = 512;
   auto [A_flat, b] = generate_diagonally_dominant_matrix(matrix_size);
 
